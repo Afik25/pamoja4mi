@@ -1,0 +1,22 @@
+{
+  "name": "pamoja4ai",
+  "version": "1.0.0",
+  "description": "DRC AI Platform where peoples share their news about technology, artificial intelligence and their experiences. Platform that aim to promote the technology to everyone for the country development by using technology as a powerful tool.",
+  "scripts": {
+    "build": "if-env TYPE=server && (cd server && npm install) || (cd client && npm install)",
+    "server": "node ./server/src/server.js",
+    "client": "cd client && npm start",
+    "dev-c": "cd client && npm start",
+    "dev-s": "cd server && npm run dev"
+  },
+  "keywords": [
+    "AI",
+    "Pamoja",
+    "DRC"
+  ],
+  "author": "Afik Foundation",
+  "license": "ISC",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  }
+}

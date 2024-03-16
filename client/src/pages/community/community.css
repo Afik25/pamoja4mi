@@ -1,0 +1,93 @@
+.community{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grey-color-3);
+}
+.community .body{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: var(--size-1) 0;
+}
+.community .body .container{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+}
+.community .body .container .left,
+.community .body .container .right{
+    width: 25%;
+}
+.community .body .container .middle{
+    width: 46%;
+}
+.community .body .container .left,
+.community .body .container .middle,
+.community .body .container .right{
+    max-height: 100%;
+    overflow-y: auto;
+}
+.community .body .container .left{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: var(--size-04);
+    padding: var(--size-04);
+}
+.community .body .container .left .left-top,
+.community .body .container .left .left-middle,
+.community .body .container .left .left-bottom{
+    width: 100%;
+}
+.community .body .container .left .left-middle .t-2,
+.community .body .container .left .left-bottom .t-2{
+    font-size: var(--size-1);
+    color: var(--color-1);
+}
+.community .body .container .left .left-middle hr,
+.community .body .container .left .left-bottom hr{
+    border: none;
+    width: 100%;
+    height: 2px;
+    background-color: var(--grey-color-3);
+}
+.community .body .container .left .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.community .body .container .left .profile img{
+    width: 20%;
+    height: 80px;
+    margin-bottom: var(--size-03);
+}
+.community .body .container .left .item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--grey-color-1);
+    font-size: var(--size-09);
+    padding: var(--size-07);
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+.community .body .container .left .item:hover{
+    background-color: var(--grey-color-3);
+}
+.community .body .container .left .item .icon{
+    margin-right: var(--size-08);
+}
+.community .body .container .left .item .active-option{
+    color: var(--black-color);
+    font-weight: bold;
+}
+.community .body .container .left .item .inactive-option{
+    color: unset;
+    font-weight: unset;
+}
