@@ -6,6 +6,8 @@ import Home from "../pages/home/Home";
 import Community from "../pages/community/Community";
 // layouts
 import _Home from "../pages/layouts/community/home/Home";
+import Favorite from "../pages/layouts/community/favorite/Favorite";
+import Library from "../pages/layouts/community/library/Library";
 
 import NotFound from "../pages/others/404";
 import Unauthorized from "../pages/others/Unauthorized";
@@ -26,6 +28,8 @@ export const routes = [
         element: <Community />,
         children: [
           { path: "/community", element: <_Home/> },
+          { path: "favorite", element: <Favorite/> },
+          { path: "library", element: <Library/> },
           // {
           //   path: "courses",
           //   element: <Course />,

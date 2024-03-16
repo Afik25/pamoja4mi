@@ -9,7 +9,7 @@ import {
   GiArtificialIntelligence,
   IoSettingsOutline,
   IoHelp,
-  FcAbout,
+  FcAbout,TiArrowShuffle
 } from "../../middlewares/icons";
 
 const Community = () => {
@@ -35,7 +35,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/favorite"
               >
                 <GrFavorite className="icon" />
                 <span>Favorite</span>
@@ -44,7 +44,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/library"
               >
                 <IoLibraryOutline className="icon" />
                 <span>Library</span>
@@ -57,7 +57,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/ml"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Machine Learning</span>
@@ -66,7 +66,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/dl"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Deep Learning</span>
@@ -75,7 +75,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/cv"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Computer Vision</span>
@@ -84,7 +84,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/nlp"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>
@@ -95,7 +95,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/rl"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Reinforcement Learning</span>
@@ -108,7 +108,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/setting"
               >
                 <IoSettingsOutline className="icon" />
                 <span>Setting</span>
@@ -117,7 +117,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/help"
               >
                 <IoHelp className="icon" />
                 <span>Help</span>
@@ -126,16 +126,53 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to=""
+                to="/community/about"
               >
                 <FcAbout className="icon" />
                 <span>About</span>
+              </NavLink>
+
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/code_of_conduct"
+              >
+                <TiArrowShuffle className="icon" />
+                <span>Code of conduct</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/privacy_policy"
+              >
+                <TiArrowShuffle className="icon" />
+                <span>Privacy policy</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/terms_of_use"
+              >
+                <TiArrowShuffle className="icon" />
+                <span>Terms of use</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/how_to_contibute"
+              >
+                <TiArrowShuffle className="icon" />
+                <span>How to contribute ?</span>
               </NavLink>
             </div>
             <p className="title t-3">v1.0.0 (beta)</p>
           </div>
           <div className="middle">
-            <Outlet/>
+            <Outlet />
           </div>
           <div className="right"></div>
         </div>
