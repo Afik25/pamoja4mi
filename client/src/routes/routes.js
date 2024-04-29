@@ -6,6 +6,7 @@ import Home from "../pages/home/Home";
 import Community from "../pages/community/Community";
 // layouts
 import _Home from "../pages/layouts/community/home/Home";
+import _Reading from "../pages/layouts/community/reading/Reading";
 import Favorite from "../pages/layouts/community/favorite/Favorite";
 import Library from "../pages/layouts/community/library/Library";
 
@@ -28,6 +29,7 @@ export const routes = [
         element: <Community />,
         children: [
           { path: "/community", element: <_Home/> },
+          { path: "reading", element: <_Reading/> },
           { path: "favorite", element: <Favorite/> },
           { path: "library", element: <Library/> },
           // {

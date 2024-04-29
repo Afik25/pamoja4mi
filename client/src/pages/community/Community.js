@@ -2,14 +2,15 @@ import React from "react";
 import "./community.css";
 import Head from "../../components/head/Head";
 import { NavLink } from "../../routes/NavLink";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import {
   GrFavorite,
   IoLibraryOutline,
   GiArtificialIntelligence,
   IoSettingsOutline,
   IoHelp,
-  FcAbout,TiArrowShuffle
+  FcAbout,
+  TiArrowShuffle,MdOutlineLocationOn
 } from "../../middlewares/icons";
 
 const Community = () => {
@@ -31,6 +32,7 @@ const Community = () => {
                   Last connexion, Sat 16 Mar 2024 at 5:53 PM
                 </p>
               </div>
+              <button className="button">Management</button>
               <NavLink
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
@@ -174,7 +176,37 @@ const Community = () => {
           <div className="middle">
             <Outlet />
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <div className="right-head">
+              <h3 className="title t-2">Trending events</h3>
+            </div>
+            <div className="right-body">
+              <Link to={''} className="rb-item link">
+                <div className="side-left">
+                  <span>29</span>
+                  <span>April</span>
+                  <span>2024</span>
+                </div>
+                <div className="side-right">
+                  <h3 className="title t-2">The future of innovation</h3>
+                  <p className="title t-3"><MdOutlineLocationOn className="icon"/><span>Conference room</span></p>
+                  <p className="title t-3">From 08:00 AM to 06:00 PM</p>
+                </div>
+              </Link>
+              <Link to={''} className="rb-item link">
+                <div className="side-left">
+                  <span>29</span>
+                  <span>April</span>
+                  <span>2024</span>
+                </div>
+                <div className="side-right">
+                  <h3 className="title t-2">The future of innovation</h3>
+                  <p className="title t-3"><MdOutlineLocationOn className="icon"/><span>Conference room</span></p>
+                  <p className="title t-3">From 08:00 AM to 06:00 PM</p>
+                </div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

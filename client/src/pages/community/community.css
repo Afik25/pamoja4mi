@@ -63,9 +63,17 @@
     flex-direction: column;
 }
 .community .body .container .left .profile img{
-    width: 20%;
+    width: 23%;
     height: 80px;
+    border-radius: 100%;
     margin-bottom: var(--size-03);
+}
+.community .body .container .left .left-top .button{
+    width: 100%;
+    background-color: var(--color-1);
+}
+.community .body .container .left .left-top .button:hover{
+    background-color: var(--grey-color-1);
 }
 .community .body .container .left .item{
     width: 100%;
@@ -91,4 +99,72 @@
 .community .body .container .left .item.inactive-option{
     color: unset;
     font-weight: unset;
+}
+
+.community .body .container .right{
+    background-color: var(--white-color);
+}
+.community .body .container .right .right-head{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--grey-color-2);
+    padding: var(--size-1) 0;
+}
+.community .body .container .right .right-head .t-2{
+    margin: 0;
+    font-size: var(--size-102);
+    font-weight: bold;
+}
+.community .body .container .right .right-body{
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.community .body .container .right .right-body .rb-item{
+    width: 100%;
+    display: flex;
+    padding: var(--size-07);
+    align-items: center;
+}
+.community .body .container .right .right-body .rb-item:hover{
+    transition: all .3s ease-in-out;
+    background-color: var(--grey-color-2);
+}
+.community .body .container .right .right-body .rb-item .side-left{
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-1);
+    border-radius: 50%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.community .body .container .right .right-body .rb-item .side-left span{
+    font-size: var(--size-08);
+}
+.community .body .container .right .right-body .rb-item .side-right{
+    padding: var(--size-07);
+}
+.community .body .container .right .right-body .rb-item .side-right .t-2{
+    font-weight: bold;
+}
+.community .body .container .right .right-body .rb-item .side-right .t-3{
+    color: var(--grey-color-1);
+    display: flex;
+    align-items: center;
+}
+.community .body .container .right .right-body .rb-item .side-right .t-3 .icon{
+    color: var(--color-1);
+    font-size: var(--size-108);
+    margin-right: var(--size-06);
+}
+.community .body .container .right .right-body .rb-item .side-right .t-3 span{
+    color: var(--color-1);
 }
