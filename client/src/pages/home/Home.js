@@ -209,7 +209,7 @@ const Home = () => {
                 data-aos-anchor-placement="bottom-bottom"
               >
                 <GrWorkshop className="icon" />
-                <span>Workshops & Webinar</span>
+                <span>Workshops & Webinars</span>
               </div>
               <div
                 className="activity-item"
