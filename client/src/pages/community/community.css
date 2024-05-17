@@ -80,7 +80,7 @@
     display: flex;
     align-items: center;
     color: var(--grey-color-1);
-    font-size: var(--size-09);
+    font-size: var(--size-07);
     padding: var(--size-07);
     transition: all .3s ease-in-out;
     text-decoration: none;

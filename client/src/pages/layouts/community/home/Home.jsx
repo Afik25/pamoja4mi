@@ -76,7 +76,7 @@ const Home = () => {
             <a href="#banner-3"></a>
           </div>
         </div>
-        <section className="posts-wrapper">
+        <div className="posts-wrapper">
           <Link to={"/community/reading"} className="post-item link">
             <div className="up">
               <div className="content">
@@ -178,7 +178,7 @@ const Home = () => {
               </div>
             </div>
           </Link>
-        </section>
+        </div>
       </div>
     </div>
   );

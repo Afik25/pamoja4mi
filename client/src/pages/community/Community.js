@@ -62,6 +62,33 @@ const Community = () => {
                 to="/community/ml"
               >
                 <GiArtificialIntelligence className="icon" />
+                <span>Statistics</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/ml"
+              >
+                <GiArtificialIntelligence className="icon" />
+                <span>Mathematics</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/ml"
+              >
+                <GiArtificialIntelligence className="icon" />
+                <span>Data Analytics</span>
+              </NavLink>
+              <NavLink
+                activeClassName="active-option"
+                inactiveClassName="inactive-option"
+                className="item"
+                to="/community/ml"
+              >
+                <GiArtificialIntelligence className="icon" />
                 <span>Machine Learning</span>
               </NavLink>
               <NavLink
