@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./_home.css";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Head from "../../components/head/Head";
 import BannerIMG from "../../assets/images/etudiants.jpg";
 import {
-  IoLibraryOutline,
   FaCreativeCommonsShare,
   GiGiftOfKnowledge,
   FaBuromobelexperte,
@@ -14,12 +13,20 @@ import {
   GiVideoConference,
   GrWorkshop,
   MdSchool,
+  MdEmail,
+  MdCall,
+  FaFacebookF,
+  BsTwitterX,
+  BsYoutube,
 } from "../../middlewares/icons";
+import Modal from "../../components/modal/Modal";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
+  const [open, setOpen] = useState(false);
+  const onClose = () => setOpen(false);
   React.useEffect(() => {
     AOS.init();
   }, []);
@@ -54,17 +61,17 @@ const Home = () => {
               masculine, nor less or/and more aged.
             </p>
             <div className="more">
-              <Link
-                to={""}
-                className="link"
+              <button
+                className="button link"
                 data-aos="fade-right"
                 data-aos-delay="300"
                 data-aos-duration="600"
+                onClick={() => setOpen(true)}
               >
                 Join the Community
-              </Link>
+              </button>
               <Link
-                to={""}
+                to={"/community"}
                 className="link"
                 data-aos="fade-left"
                 data-aos-delay="300"
@@ -108,7 +115,7 @@ const Home = () => {
               >
                 <div className="value-title">
                   <FaCreativeCommonsShare className="icon" />
-                  <spa>Creativities</spa>
+                  <span>Creativities</span>
                 </div>
               </div>
               <div
@@ -226,17 +233,138 @@ const Home = () => {
         </div>
         <div className="footer">
           <div className="container">
-            <div className="side side-1">
-              <span>Powered by </span>
-              <Link to={"https://afoundation.tech"} target="_blank">
-                Afik Foundation
-              </Link>
+            <div className="up">
+              <div className="side side-1">
+                <Link to="/community">
+                  <img
+                    src={process.env.PUBLIC_URL + "/logo.png"}
+                    alt="logo"
+                    className="logo"
+                  />
+                </Link>
+                <p className="title t-3">Learn in-needed in my pocket.</p>
+              </div>
+              <div className="side side-2">
+                <div className="row">
+                  <MdEmail className="icon" />
+                  <span>contact@pamoja4mi.io</span>
+                </div>
+                <div className="row">
+                  <MdCall className="icon" />
+                  <span>+243 816194942</span>
+                </div>
+                <div className="row">
+                  <Link to={""} className="link social">
+                    <FaFacebookF className="icon" />
+                  </Link>
+                  <Link to={""} className="link social">
+                    <BsTwitterX className="icon" />
+                  </Link>
+                  <Link to={""} className="link social">
+                    <BsYoutube className="icon" />
+                  </Link>
+                </div>
+              </div>
+              <div className="side side-3">
+                <Link to={""} className="link social">
+                  <img
+                    src={process.env.PUBLIC_URL + "/app-ios.jpeg"}
+                    alt="ios"
+                    className="mobile"
+                  />
+                </Link>
+                <Link to={""} className="link social">
+                  <img
+                    src={process.env.PUBLIC_URL + "/app-android.jpeg"}
+                    alt="android"
+                    className="mobile"
+                  />
+                </Link>
+              </div>
             </div>
-            <div className="side side-2"></div>
-            <div className="side side-3"></div>
+            <hr />
+            <div className="middle">
+              <div className="side side-1">
+                <h3 className="title t-2">Community</h3>
+                <Link to={""} className="link">
+                  Blog
+                </Link>
+                <Link to={""} className="link">
+                  Courses
+                </Link>
+                <Link to={""} className="link">
+                  Webinars
+                </Link>
+                <Link to={""} className="link">
+                  Laboratory
+                </Link>
+              </div>
+              <div className="side side-2">
+                <h3 className="title t-2">About Us</h3>
+                <Link to={""} className="link">
+                  Team
+                </Link>
+                <Link to={""} className="link">
+                  Careers
+                </Link>
+                <Link to={""} className="link">
+                  Contact us
+                </Link>
+              </div>
+              <div className="side side-3">
+                <h3 className="title t-2">Legal</h3>
+                <Link to={""} className="link">
+                  Cookie Policy
+                </Link>
+                <Link to={""} className="link">
+                  Privacy Policy
+                </Link>
+                <Link to={""} className="link">
+                  Terms of Service
+                </Link>
+                <Link to={""} className="link">
+                  Data Processing Agreement
+                </Link>
+              </div>
+              <div className="side side-4">
+                <h3 className="title t-2">Contribute</h3>
+                <Link to={""} className="link">
+                  Become an Author
+                </Link>
+                <Link to={""} className="link">
+                  Become an Affiliate
+                </Link>
+              </div>
+            </div>
+            <hr />
+            <div className="bottom">
+              <div className="side side-1">
+                <span>Powered by </span>
+                <Link to={"https://afoundation.tech"} target="_blank">
+                  Afik Foundation
+                </Link>
+              </div>
+              <div className="side side-2">
+                <span>
+                  Copyright &copy; {new Date().getFullYear()} Pamoja4MI. All
+                  rights reserved.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      {open && (
+        <Modal
+          visibility={true}
+          open={onClose}
+          width={"90%"}
+          height={"90%"}
+          maxHeight={"100%"}
+          title={"Pamoja4MI Sin Up: Joining the Community"}
+          content={<p>Content</p>}
+        />
+      )}
     </React.Fragment>
   );
 };

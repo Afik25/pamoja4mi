@@ -1,10 +1,11 @@
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
-import { BsShare } from "react-icons/bs";
+import { BsShare, BsTwitterX, BsYoutube } from "react-icons/bs";
 import {
   FaRegEye,
   FaRegComments,
   FaCreativeCommonsShare,
   FaBuromobelexperte,
+  FaFacebookF,
 } from "react-icons/fa";
 import { FcAbout } from "react-icons/fc";
 import {
@@ -28,13 +29,21 @@ import {
   MdDataExploration,
   MdModelTraining,
   MdSchool,
+  MdEmail,
+  MdCall,
 } from "react-icons/md";
 import { PiHandsClappingLight } from "react-icons/pi";
 import { TiArrowShuffle } from "react-icons/ti";
 
 export { BiChevronDown, BiChevronUp };
-export { BsShare };
-export { FaRegEye, FaRegComments, FaCreativeCommonsShare, FaBuromobelexperte };
+export { BsShare, BsTwitterX, BsYoutube };
+export {
+  FaRegEye,
+  FaRegComments,
+  FaCreativeCommonsShare,
+  FaBuromobelexperte,
+  FaFacebookF,
+};
 export { FcAbout };
 export { GiArtificialIntelligence, GiGiftOfKnowledge, GiVideoConference };
 export { GrFavorite, GrHomeRounded, GrArticle, GrWorkshop };
@@ -48,6 +57,8 @@ export {
   MdDataExploration,
   MdModelTraining,
   MdSchool,
+  MdEmail,
+  MdCall,
 };
 export { PiHandsClappingLight };
 export { TiArrowShuffle };

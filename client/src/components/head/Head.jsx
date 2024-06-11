@@ -9,7 +9,7 @@ const Head = () => {
   return (
     <div className="head">
       <div className="container">
-        <Link to="/community">
+        <Link to="/">
           <img src={process.env.PUBLIC_URL + "/logo.png"} className="logo" />
         </Link>
         <div className="navigation">

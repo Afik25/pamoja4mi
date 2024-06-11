@@ -4,6 +4,7 @@ import RequireAuth from "../state/context/hooks/RequireAuth";
 // pages
 import Home from "../pages/home/Home";
 import Community from "../pages/community/Community";
+import Schedule from "../components/schedule/Schedule";
 // layouts
 import _Home from "../pages/layouts/community/home/Home";
 import _Reading from "../pages/layouts/community/reading/Reading";
@@ -24,6 +25,7 @@ export const routes = [
     element: <MainLayout />,
     children: [
       { path: "/", element: <Home /> },
+      { path: "/schedule", element: <Schedule /> },
       {
         path: "/community",
         element: <Community />,

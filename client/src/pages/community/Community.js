@@ -59,7 +59,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/ml"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Statistics</span>
@@ -68,7 +68,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/ml"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Mathematics</span>
@@ -77,7 +77,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/ml"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Data Analytics</span>
@@ -86,7 +86,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/ml"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Machine Learning</span>
@@ -95,7 +95,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/dl"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Deep Learning</span>
@@ -104,7 +104,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/cv"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Computer Vision</span>
@@ -113,7 +113,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/nlp"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>
@@ -124,7 +124,7 @@ const Community = () => {
                 activeClassName="active-option"
                 inactiveClassName="inactive-option"
                 className="item"
-                to="/community/rl"
+                to="/community/"
               >
                 <GiArtificialIntelligence className="icon" />
                 <span>Reinforcement Learning</span>
