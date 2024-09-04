@@ -1,0 +1,27 @@
+fastapi
+uvicorn
+python-dotenv
+
+sqlalchemy
+psycopg2-binary
+alembic
+sqlmodel
+asyncpg
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+
+# pip install -r requirements.txt
+# (base) afik@Amss-MacBook-Pro server % source venv/bin/activate
+# (base) afik@Amss-MacBook-Pro server % python3 main.py
+# alembic init -t async migrations
+# alembic revision --autogenerate -m "message content"
+# alembic upgrade head
+# 
+
+# password=pwd_context.hash(register.new_password)
+
+# import sqlmodel
+# from sqlmodel import SQLModel
+# from api.v1.models import *
+# target_metadata = SQLModel.metadata

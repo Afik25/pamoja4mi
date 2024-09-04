@@ -1,0 +1,77 @@
+.schedule{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule .container{
+    width: 50%;
+    display: block;
+}
+.schedule .container .t-1{
+    color: var(--black-color);
+    font-size: var(--size-105);
+    margin-bottom: var(--size-05);
+}
+.schedule .container .t-2{
+    color: var(--grey-color-1);
+    font-size: var(--size-1);
+}
+.schedule .container .content{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+.schedule .container .content .item{
+    width: var(100% / 7);
+    margin: var(--size-03);
+}
+.schedule .container .content .item .i-head,
+.schedule .container .content .item .i-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--size-07);
+}
+.schedule .container .content .item .i-head{
+    border-bottom: 1px solid var(--grey-color-2);
+    text-align: center;
+    margin-bottom: var(--size-05);
+}
+.schedule .container .content .item .i-head .t-1{
+    color: var(--black-color);
+    font-size: var(--size-1);
+    margin-bottom: var(--size-05);
+}
+.schedule .container .content .item .i-head .t-3{
+    color: var(--black-color);
+    font-size: var(--size-07);
+}
+.schedule .container .content .item .i-body{
+    align-items: center;
+}
+.schedule .container .content .item .i-body .button{
+    width: 100%;
+    background-color: var(--black-color);
+    margin-bottom: var(--size-05);
+    transition: all .3s ease-in-out;
+}
+.schedule .container .content .item .i-body .button:hover{
+    background-color: var(--grey-color-1);
+}
+.schedule .container .content .item .i-body .button.active{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+}
+.schedule .container .content .item .i-body .button.inactive{
+    background-color: var(--grey-color-1);
+    color: var(--black-color);
+    cursor:wait;
+}
+
+

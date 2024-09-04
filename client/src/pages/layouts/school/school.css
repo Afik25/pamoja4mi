@@ -1,0 +1,102 @@
+.school {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.school .inner,
+.school .outer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.school .inner .school-head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.school .inner .school-head .sh-left {
+  display: block;
+}
+.school .inner .school-head .sh-left .t-2 {
+  font-size: var(--size-1);
+  font-weight: 700;
+}
+.school .inner .school-head .sh-left .t-2 span {
+  font-size: var(--size-08);
+}
+.school .inner .school-head .sh-left .t-3 {
+  font-size: var(--size-9);
+  font-weight: 500;
+  margin: 0;
+}
+.school .inner .school-head .sh-right {
+  display: flex;
+}
+.school .inner .school-head .sh-right .button {
+  font-size: var(--size-07);
+  display: flex;
+  align-items: center;
+}
+.school .inner .school-head .sh-right .button .icon {
+  margin-right: var(--size-05);
+}
+.school .inner .school-head .sh-right .button:first-child {
+  background-color: var(--black-color);
+  margin-right: var(--size-05);
+}
+.school .inner .school-head .sh-right .button:last-child {
+  background-color: var(--color-1);
+}
+.school .inner .school-content {
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.school .inner .school-content .table thead tr {
+  background-color: var(--grey-color-2);
+}
+.school .inner .school-content .table tbody td .button {
+  background-color: var(--black-color);
+  font-size: var(--size-07);
+}
+/* Outer */
+.school .outer {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: var(--size-1);
+}
+.school .outer .wrapper {
+  width: 50%;
+  background-color: var(--white-color);
+  border-radius: var(--size-05);
+  margin: auto;
+  padding: var(--size-05);
+}
+.school .outer .wrapper .ow-head {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.school .outer .wrapper .ow-head .t-2 {
+  margin: 0;
+  font-size: var(--size-1);
+  font-weight: 600;
+}
+.school .outer .wrapper .ow-head span {
+  cursor: pointer;
+  font-size: var(--size-2);
+}
+.school .outer .wrapper hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey-color-2);
+  margin: var(--size-05) 0;
+}
+.school .outer .wrapper .ow-body {
+  width: 100%;
+  display: block;
+}

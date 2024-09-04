@@ -1,0 +1,92 @@
+.sign-up-complete {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-complete .wrapper {
+  width: 50%;
+  height: auto;
+  max-height: 100%;
+  text-align: center;
+  padding: var(--size-2);
+  overflow-y: auto;
+}
+.sign-up-complete .wrapper .t-1 {
+  font-size: var(--size-3);
+  font-weight: 700;
+}
+.sign-up-complete .wrapper .t-3 {
+  color: var(--grey-color-1);
+  font-size: var(--size-1);
+  font-weight: 500;
+}
+.sign-up-complete .wrapper .t-2 {
+  color: var(--color-1);
+  font-size: var(--size-2);
+  font-weight: 600;
+}
+.sign-up-complete .wrapper form {
+  width: 100%;
+  padding: var(--size-1) 0;
+}
+.sign-up-complete .wrapper form .row {
+  width: 100%;
+  display: flex;
+}
+.sign-up-complete .wrapper form .row.row-space {
+  justify-content: space-between;
+}
+.sign-up-complete .wrapper form .row.row-space .input-div {
+  width: 49%;
+}
+.sign-up-complete .wrapper form .agreement {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--size-1);
+}
+.sign-up-complete .wrapper form .agreement span {
+  font-size: var(--size-09);
+  margin-left: var(--size-1);
+}
+.sign-up-complete .wrapper form .button {
+  background-color: var(--color-3);
+}
+@media only screen and (max-width: 768px) {
+  .sign-up-complete {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sign-up-complete .wrapper {
+    width: 95%;
+    padding: var(--size-1);
+    overflow-y: auto;
+  }
+  .sign-up-complete .wrapper .t-1 {
+    font-size: var(--size-105);
+  }
+  .sign-up-complete .wrapper .t-3 {
+    font-size: var(--size-09);
+  }
+  .sign-up-complete .wrapper .t-2 {
+    font-size: var(--size-09);
+  }
+  .sign-up-complete .wrapper form .row {
+    flex-direction: column;
+  }
+  .sign-up-complete .wrapper form .row.row-space {
+    justify-content: center;
+  }
+  .sign-up-complete .wrapper form .row.row-space .input-div {
+    width: 100%;
+  }
+  .sign-up-complete .wrapper form .agreement {
+    align-items: start;
+  }
+  .sign-up-complete .wrapper form .agreement span {
+    font-size: var(--size-09);
+    margin-left: var(--size-06);
+  }
+}

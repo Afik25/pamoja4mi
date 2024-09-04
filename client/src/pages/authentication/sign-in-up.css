@@ -1,0 +1,114 @@
+.sign-in-up {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.sign-in-up .sign-body {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+}
+.sign-in-up .sign-body .left,
+.sign-in-up .sign-body .right {
+  width: 50%;
+  height: 100%;
+  padding: var(--size-3);
+}
+.sign-in-up .sign-body .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-up .sign-body .left img {
+  width: 90%;
+  height: 60%;
+}
+.sign-in-up .sign-body .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-up .sign-body .right form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.sign-in-up .sign-body .right form .t-2 {
+  font-size: var(--size-2);
+  font-weight: 700;
+}
+.sign-in-up .sign-body .right form .t-3 {
+  color: var(--grey-color-1);
+  font-size: var(--size-08);
+  font-weight: 500;
+}
+.sign-in-up .sign-body .right form .row {
+  width: 100%;
+  display: flex;
+}
+.sign-in-up .sign-body .right form .row-space {
+  justify-content: space-between;
+}
+.sign-in-up .sign-body .right form .row-space .input-div {
+  width: 49%;
+}
+.sign-in-up .sign-body .right form .row .link {
+  color: var(--color-1);
+  margin-left: var(--size-05);
+}
+.sign-in-up .sign-body .right form .row-1 {
+  justify-content: flex-end;
+  margin-bottom: var(--size-1);
+}
+.sign-in-up .sign-body .right form .row-1 .link {
+  text-decoration: underline;
+}
+.sign-in-up .sign-body .right form .row-2 {
+  justify-content: center;
+  margin-top: var(--size-3);
+}
+
+@media only screen and (max-width: 768px) {
+  .sign-in-up .sign-body {
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - 80px);
+    display: block;
+    overflow-y: auto;
+  }
+  .sign-in-up .sign-body .left{
+    display: none;
+  }
+  .sign-in-up .sign-body .right {
+    width: 100%;
+    height: 100%;
+    padding: var(--size-1);
+  }
+  .sign-in-up .sign-body .right form {
+    width: 95%;
+  }
+  .sign-in-up .sign-body .right form .t-2 {
+    font-size: var(--size-2);
+    font-weight: 700;
+  }
+  .sign-in-up .sign-body .right form .t-3 {
+    color: var(--grey-color-1);
+    font-size: var(--size-08);
+    font-weight: 500;
+  }
+  .sign-in-up .sign-body .right form .row {
+    width: 100%;
+    display: block;
+  }
+  .sign-in-up .sign-body .right form .row-space .input-div {
+    width: 100%;
+  }
+  .sign-in-up .sign-body .right form .row .link {
+    color: var(--color-1);
+    margin-left: var(--size-05);
+  }
+  .sign-in-up .sign-body .right form .row-2 {
+    justify-content: center;
+    margin-top: var(--size-2);
+  }
+}

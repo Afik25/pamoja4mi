@@ -1,0 +1,141 @@
+.administration {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: block;
+  background-color: var(--grey-color-3);
+}
+.administration .admin-header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--white-color);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.administration .admin-header .admin-header-container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.administration .admin-header .admin-header-container .logo {
+  height: 80%;
+}
+.administration .admin-header .admin-header-container .ad-navigations {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+.administration .admin-header .admin-header-container .ad-navigations .link {
+  display: flex;
+  align-items: center;
+  padding: var(--size-03) var(--size-07);
+  transition: all 0.3s ease-in-out;
+}
+.administration
+  .admin-header
+  .admin-header-container
+  .ad-navigations
+  .link
+  .option-icon {
+  margin-right: var(--size-05);
+}
+.administration
+  .admin-header
+  .admin-header-container
+  .ad-navigations
+  .link
+  span {
+  font-weight: 600;
+  font-family: "amiri", sans-serif;
+  font-size: var(--size-1);
+}
+.administration
+  .admin-header
+  .admin-header-container
+  .ad-navigations
+  .active-option {
+  color: var(--color-1);
+  border-bottom: 4px solid var(--color-1);
+}
+.administration
+  .admin-header
+  .admin-header-container
+  .ad-navigations
+  .inactive-option {
+  color: var(--grey-color-1);
+}
+.administration
+  .admin-header
+  .admin-header-container
+  .ad-navigations
+  .inactive-option:hover {
+  background-color: var(--grey-color-3);
+}
+.administration .admin-header .admin-header-container .options {
+  display: flex;
+  align-items: center;
+}
+.administration .admin-header .admin-header-container .options .option{
+    background-color: var(--grey-color-3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: var(--size-03);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.administration .admin-header .admin-header-container .options .option:hover{
+    background-color: var(--grey-color-2);
+}
+.administration .admin-header .admin-header-container .options .option .icon-element{
+    font-size: var(--size-102);
+}
+.administration .admin-header .admin-header-container .options .option .counter{
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    padding: var(--size-03);
+    border-radius: var(--size-07);
+    font-size: var(--size-07);
+}
+.administration .admin-header .admin-header-container .options .profile {
+  display: flex;
+  align-items: center;
+  margin: 0 var(--size-07);
+}
+.administration .admin-header .admin-header-container .options .profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin: 0 var(--size-05);
+}
+.administration .admin-header .admin-header-container .options .profile .t-2 {
+  margin: 0;
+  font-size: var(--size-09);
+  font-weight: 600;
+}
+.administration .admin-header .admin-header-container .options .button {
+  background-color: var(--color-4);
+  color: var(--white-color);
+  font-size: var(--size-07);
+}
+
+.administration .admin-body {
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: var(--size-05) 0;
+}
+.administration .admin-body .admin-body-container {
+  width: 90%;
+  height: 100%;
+  background-color: var(--grey-color-3);
+  margin: auto;
+}
