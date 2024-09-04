@@ -4,17 +4,12 @@ import Head from "../../components/head/Head";
 import { NavLink } from "../../routes/NavLink";
 import { Link, Outlet } from "react-router-dom";
 import {
-  GoHome,
-  GrFavorite,
-  IoLibraryOutline,
-  GiArtificialIntelligence,
   IoSettingsOutline,
   IoHelp,
   FcAbout,
   TiArrowShuffle,
   MdOutlineLocationOn,
 } from "../../middlewares/icons";
-import Modal from "../../components/modal/Modal.jsx";
 
 const Community = () => {
   return (
