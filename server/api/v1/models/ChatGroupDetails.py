@@ -4,7 +4,7 @@ from api.v1.models.mixins import TimeMixin
 from typing import Optional
 from datetime import datetime
 
-class ChatGroupDetails(SQLModel, DataMixin, TimeMixin, table=True):
+class ChatGroupDetails(SQLModel, TimeMixin, table=True):
     __tablename__ = "chat_groups_details"
 
     id: int = Field(primary_key=True, nullable=False)

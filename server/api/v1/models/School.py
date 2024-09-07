@@ -3,7 +3,7 @@ from sqlalchemy import Column, String, table
 from api.v1.models.mixins import TimeMixin
 from typing import List
 
-class School(SQLModel, DataMixin, TimeMixin, table=True):
+class School(SQLModel, TimeMixin, table=True):
     __tablename__ = "schools"
 
     id: int = Field(primary_key=True, nullable=False)

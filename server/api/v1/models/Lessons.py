@@ -4,7 +4,7 @@ from api.v1.models.mixins import TimeMixin
 from typing import Optional, List
 
 
-class Lessons(SQLModel, DataMixin, TimeMixin, table=True):
+class Lessons(SQLModel, TimeMixin, table=True):
     __tablename__ = "lessons"
 
     id: int = Field(primary_key=True, nullable=False)

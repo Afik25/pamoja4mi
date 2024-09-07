@@ -5,7 +5,7 @@ from typing import Optional
 from datetime import datetime
 
 
-class AssessmentDetails(SQLModel, DataMixin, TimeMixin, table=True):
+class AssessmentDetails(SQLModel, TimeMixin, table=True):
     __tablename__ = "assessment_details"
 
     id: int = Field(primary_key=True, nullable=False)

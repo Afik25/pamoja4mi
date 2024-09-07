@@ -14,10 +14,10 @@ const Head = () => {
         </Link>
         <div className="navigation">
           <Link to="/signin" className="button sign-in">
-            {t("header.text-5")}
+            {t("header.text-1")}
           </Link>
           <Link to="/signup" className="button sign-up">
-            {t("header.text-6")}
+            {t("header.text-2")}
           </Link>
           <ControlLanguage />
         </div>

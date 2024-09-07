@@ -4,7 +4,7 @@ from api.v1.models.mixins import TimeMixin
 from typing import Optional
 
 
-class Answers(SQLModel, DataMixin, TimeMixin, table=True):
+class Answers(SQLModel, TimeMixin, table=True):
     __tablename__ = "answers"
 
     id: int = Field(primary_key=True, nullable=False)

@@ -5,7 +5,7 @@ from typing import Optional
 from datetime import datetime
 
 
-class LearningHistoric(SQLModel, DataMixin, TimeMixin, table=True):
+class LearningHistoric(SQLModel, TimeMixin, table=True):
     __tablename__ = "learning_historic"
 
     id: int = Field(primary_key=True, nullable=False)

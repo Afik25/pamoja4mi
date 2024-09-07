@@ -4,7 +4,7 @@ from api.v1.models.mixins import TimeMixin
 from typing import List, Optional
 from datetime import datetime
 
-class Message(SQLModel, DataMixin, TimeMixin, table=True):
+class Message(SQLModel, TimeMixin, table=True):
     __tablename__ = "messages"
 
     id: int = Field(primary_key=True, nullable=False)
