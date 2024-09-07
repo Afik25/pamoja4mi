@@ -28,6 +28,8 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ASSETS from "../../utils/Assets";
+//
+import MessageBox from "../../components/msgBox/MessageBox";
 
 const Home = () => {
   const [currentBanner, setCurrentBanner] = useState(0);
@@ -357,6 +359,9 @@ const Home = () => {
             <p className="title t-3">
               You need more news, you need to get on date.
             </p>
+            <div className="notification-box">
+              <MessageBox type={"success"} text={"Message Box"} />
+            </div>
             <form>
               <input type="text" placeholder="Enter your email address" />
               <button type="submit" className="button">

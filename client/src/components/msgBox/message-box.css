@@ -48,5 +48,6 @@
   margin-bottom: var(--size-05);
 }
 .msg-box .msg-box-container .msg-details .t-3 {
+  color: var(--black-color);
   font-size: var(--size-08);
 }
