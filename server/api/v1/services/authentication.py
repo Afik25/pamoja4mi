@@ -21,14 +21,16 @@ class Authentication:
     async def root():
 
         # mapping request data to class entity table
-        _userObj = User(username="admin", password=pwd_context.hash(
-            "admin"), is_completed=False, sys_role="admin")
+        _userObj = User(firstname="Amisi", lastname="Fikirini", gender="Male",
+                       mail="amisifikirini@gmail.com", birth="05-25-1995", birth_location="Kinshasa", 
+                       origin_country="Democratic Republic of the Congo", profession="", thumbnail="", sys_role="", status=1)
 
-        # checking the username
-        _username = await UserRepository.findByUsername("admin")
-        if _username:
+        # checking the mail
+        userMail = await UserRepository.findByMail("amisifikirini@gmail.com")
+
+        if userMail:
             raise HTTPException(
-                status_code=400, detail={"status": 0, "message": "The admin root already configured!"})
+                status_code=400, detail={"status": 0, "message": "The root configuration already done!"})
 
         _userRs = await UserRepository.create(**_userObj.dict())
 
@@ -41,7 +43,7 @@ class Authentication:
         }
 
         if _userRs:
-            return {"status": 1, "message": "Register successfully!", "result":  _userData}
+            return {"status": 1, "message": "Root setup done successfully!", "result":  _userData}
 
     @staticmethod
     async def register(register: RegisterSchema):

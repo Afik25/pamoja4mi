@@ -33,15 +33,18 @@ import MessageBox from "../../components/msgBox/MessageBox";
 
 const Home = () => {
   const [currentBanner, setCurrentBanner] = useState(0);
+
   React.useEffect(() => {
     AOS.init();
   }, []);
+
   React.useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentBanner(currentBanner === 0 ? 1 : 0);
     }, 5000);
     return () => clearTimeout(timer);
   }, [currentBanner]);
+  
   return (
     <React.Fragment>
       <Helmet>

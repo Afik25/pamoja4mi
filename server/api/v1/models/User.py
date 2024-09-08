@@ -20,8 +20,6 @@ class User(SQLModel, TimeMixin, table=True):
         "profession", String, unique=False))
     thumbnail: str = Field(sa_column=Column(
         "thumbnail", String, unique=False))
-    is_completed: bool = Field(sa_column=Column(
-        "is_completed", BOOLEAN, unique=False))
     sys_role: str = Field(sa_column=Column("sys_role", String, unique=False))
     status: int = Field(sa_column=Column("status", INTEGER, unique=False))
     #
